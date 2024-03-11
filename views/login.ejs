@@ -1,0 +1,18 @@
+<%- include("layouts/header") %>
+    <main>
+        <h1>Welcome To Login Page!</h1>
+        <form action="/user/login" method="post">
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+        <h3 style="font-family:fantasy">Or</h3>
+        <a style="font-family:Verdana, Geneva, Tahoma, sans-serif" href="/auth/google">Log In With Google!</a>
+    </main>
+<%- include("layouts/footer") %>

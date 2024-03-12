@@ -7,7 +7,7 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const passport = require("passport");
 const session = require("express-session");
-require("./config/passport");
+// require("./config/passport");
 require("./config/passport-google-auth");
 const MongoStore = require('connect-mongo');
 const { usersRoute } = require("./routes/users.route");
